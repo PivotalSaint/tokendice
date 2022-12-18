@@ -1,10 +1,13 @@
+import LoginForm from "./LoginForm";
+
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <h1>Welcome to the next Phase</h1>
+            <h1>Future Pivots: Next Phase</h1>
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">Gallery</a>
+                <a href="/login">{ LoginForm }</a>
             </div>
         </nav>
     )
