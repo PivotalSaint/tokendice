@@ -41,7 +41,7 @@ userSchema.pre('save', async function (next) {
     return bcrypt.compare(password, this.password);
   };
   
-  userSchema.virtual('blogCount').get(function () {
+  userSchema.virtual('savedBlogs').get(function () {
     return this.savedBlogs.length;
   });
   
