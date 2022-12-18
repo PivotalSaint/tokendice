@@ -1,18 +1,31 @@
 const { ApolloServer } = require('apollo-server');
-const mongoose = require('mongoose');
+const express = require('express');
 
-const { typeDefs, resolvers } = require('./schemas/index')
+const { typeDefs, resolvers } = require('./schemas')
+const tokendice = require('./config/connection');
+
+const PORT = process.env.PORT || 3000;
 
 const server = new ApolloServer({
     typeDefs,
     resolvers
 });
 
-mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true})
-.then(() => {
-    console.log("MongoDB Connected");
-    return server.listen({port:3000})
-})
-.then((res) => {
-    console.log(`Server running at ${res.url}`)
-});
+const app = express();
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+const startApolloServer = async (typeDefs, resolvers) => {
+    await server.start();
+    server.setupMiddlewares({ app });
+}
+
+tokendice.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+    })
+  })
+
+
+startApolloServer(typeDefs, resolvers);

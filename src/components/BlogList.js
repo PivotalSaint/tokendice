@@ -1,4 +1,4 @@
-const BlogList = ({ blogs, title}) => {
+const BlogList = ({ blogs, title, body}) => {
 
 const handleClick = () => {
     console.log('underneath it all')
@@ -10,7 +10,7 @@ const handleClick = () => {
         <div className="blog-preview" key={blog.id}>
           <h2> {blog.title} </h2>
           <p>Artistic Piece: Created by {blog.author}</p>
-          <button className="button" onClick={handleClick}>Buy</button>
+          <button className="button" onClick={handleClick}>{blog.body}</button>
         </div>
       ))}
     </div>

@@ -1,4 +1,5 @@
-import LoginForm from "./LoginForm";
+import Login from "./Login";
+// import SignupForm from "./SignupForm";
 
 const Navbar = () => {
     return (
@@ -7,7 +8,8 @@ const Navbar = () => {
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/create">Gallery</a>
-                <a href="/login">{ LoginForm }</a>
+                <a href="/login">Login{ Login }</a>
+                {/* <a href="/signup">Signup{ SignupForm }</a> */}
             </div>
         </nav>
     )
