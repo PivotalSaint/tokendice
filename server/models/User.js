@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const { default: BlogList } = require('../../src/components/BlogList');
+const Blog = require('./Blog')
 
 const userSchema = new Schema(
     {
@@ -19,7 +19,7 @@ const userSchema = new Schema(
         type: String,
         required: true,
       },
-      savedBlogs: [BlogList],
+      savedBlogs: [Blog],
     },
     {
       toJSON: {
