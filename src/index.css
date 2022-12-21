@@ -19,6 +19,7 @@
 }
 .form {
   color: white;
+  min-width: 95%;
 }
 
 .navbar {
@@ -28,7 +29,7 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 3px solid #f58888;
-  min-width: 95%;
+  min-width: 100%;
 }
 
 .button {
@@ -45,6 +46,7 @@
 .navbar .links {
   margin-left: auto;
   color: white;
+  min-width: 95%;
 }
 
 .navbar a {
@@ -52,6 +54,7 @@
   text-decoration: none;
   padding: 6px;
   color: white;
+  min-width: 95%;
 }
 
 .navbar a:hover {
@@ -142,4 +145,5 @@
 
 .login {
   color: white;
+  min-width: 95%;
 }
