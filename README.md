@@ -1,12 +1,12 @@
 # ***TokenDice Productions***
-![img]()
+![img](./src/images/pivottokens.jpg)
 ***"Going tough against the wave of adversity"***
 
 # ***Author***
 
 **Pivotal Saint**
 
-# ***Special Recognition of Production Team***
+# ***Special Recognition from Production Team***
 
 Pivotal Saint would like to thank all the people who have helped him get to this part of his journey.
 Family, Faith, and Friends have helped encourage Pivotal to continue his path towards making a better future for everyone who has come into contact with him. 
