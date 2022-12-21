@@ -147,3 +147,19 @@
   color: white;
   min-width: 95%;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  margin-top: auto;
+  padding-top: 1px;
+}
+
+footer a {
+  position: inherit;
+  align-items: center;
+}

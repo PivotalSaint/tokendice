@@ -49,11 +49,11 @@ Mutation: {
       const token = signToken(user);
       return { token, user };
   },
-  savedBlogs: async (parent, { gameToSave }, context) => {
+  savedBlogs: async (parent, { blogs }, context) => {
     if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
             { _id: context.user._id },
-            { $addToSet: { savedGames: gameToSave } },
+            { $addToSet: { savedBlogs: blogs } },
             { new: true }
         );
         return updatedUser;

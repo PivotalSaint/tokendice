@@ -35,7 +35,7 @@ const SignupForm = () => {
   };
 
   return (
-    <>
+    <div className='Signup-Form'>
       <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
           Something went wrong with your signup!
@@ -87,7 +87,7 @@ const SignupForm = () => {
         </Button>
       </Form>
       {error && <div>Sign up failed</div>}
-    </>
+    </div>
   );
 };
 

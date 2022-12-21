@@ -1,8 +1,5 @@
-const BlogList = ({ blogs, title, body}) => {
-
-const handleClick = () => {
-    console.log('underneath it all')
-};
+import React from "react";
+const BlogList = ({ blogs, title, handleClick}) => {
 
     return (
     <div className="blog-list">
@@ -11,8 +8,7 @@ const handleClick = () => {
         <div className="blog-preview" key={blog.id}>
           <h2> {blog.title} </h2>
           <p>Artistic Piece: Created by {blog.author}</p>
-          <p>{blog.body}</p>
-          <button className="button" onClick={handleClick}>{blog.body}</button>
+          <button className="button" onClick={() => handleClick(blog.id)}>{blog.body}</button>
         </div>
       ))}
     </div>
