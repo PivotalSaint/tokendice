@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken');
 
+
 module.exports = {
-  signToken: function({ username, email, _id }) {
-    const payload = { username, email, _id };
+  signToken: function({ username, email, password }) {
+    const payload = { username, email, password };
 
     return jwt.sign({ data: payload }, process.env.SECRET, { maxAge: process.env.EXPIRATION  });
   },
