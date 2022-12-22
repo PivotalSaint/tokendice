@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Gallery = () => {
 
 
   return (
     <div className="gallery">
+      <>
+      </>
     </div>
   );
 };

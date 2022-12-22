@@ -25,3 +25,7 @@ Creating User interface with their own personal account, so that, an establish n
 
 ***https://tokendice.herokuapp.com/***
 
+## ***Google Slide Show***
+
+https://docs.google.com/presentation/d/1tVJjmtUU1tNAzqPqAyZdCR-pAfENoRmEMQTpX7daius/edit?usp=sharing
+
