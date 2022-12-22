@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "./Login";
 // import SignupForm from "./SignupForm";
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
                 <a href="/gallery">Gallery</a>
                 <a href="/create">Blogs</a>
                 <a href="/signup">Signup</a>
-                <a href="/login">Login{ Login }</a>
+                <a href="/login">Login</a>
                 {/* <a href="/signup">Signup{ SignupForm }</a> */}
             </div>
         </nav>

@@ -4,10 +4,7 @@ const Gallery = () => {
 
 
   return (
-    <div className="gallery">
-      <>
-      </>
-    </div>
+    <div className="gallery"></div>
   );
 };
 
